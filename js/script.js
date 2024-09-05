@@ -1,5 +1,5 @@
 function newItem(){
-   let li = $('#list')
+   let li = $('<li></li>')
    let inputValue = $('#input').val();
    li.append(inputValue);
 
@@ -18,7 +18,7 @@ function newItem(){
 
     let crossOutButton = $('<crossOutButton></crossOutButton>');
     crossOutButton.append(document.createTextNode("X"));
- 	li.appendChild(crossOutButton);
+ 	li.append(crossOutButton);
 
  	crossOutButton.on("click", deleteListItem);
 
